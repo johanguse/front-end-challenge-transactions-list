@@ -1,0 +1,95 @@
+.modal-wrapper {
+  border: 3px solid @black;
+  padding: 20px 80px;
+
+  &-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 374.98px) {
+    padding: 20px;
+  }
+}
+
+.status {
+  text-align: center;
+  margin-bottom: 50px;
+
+  .status-bar {
+    margin-bottom: 10px;
+
+    .bar {
+      appearance: none;
+      background-color: @gray-dark;
+      width: 100%;
+      height: 15px;
+      border: 0;
+
+      &::-webkit-progress-bar {
+        background-color: @gray-dark;
+      }
+
+      &::-moz-progress-bar {
+        background-color: @gray-dark;
+      }
+
+      &::-webkit-progress-value {
+        background: @black;
+      }
+
+      &::-moz-progress-bar {
+        background: @black;
+      }
+    }
+  }
+
+  .status-text {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.transfer {
+
+  &-location {
+    margin-bottom: 30px;
+
+    &__text {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .title {
+    border-bottom: 1px solid @black;
+    font-size: 20px;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
+
+.btn-close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+
+  .close-icon {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    stroke: @white;
+  }
+}
